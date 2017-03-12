@@ -1,3 +1,6 @@
+//Copyright 2017, ahahn94
+//This program is release under the GNU General Public License v.2.
+
 package com.github.ahahn94.tunerdb;
 
 import android.annotation.TargetApi;
@@ -75,18 +78,19 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        File file = new File(getFilesDir() + "/db.txt");
-        if(!file.exists()){
+        File file = new File(getFilesDir() + "/db.txt"); //Database-File
+        if(!file.exists()){     //If File does not exist: create File
             try {
                 file.createNewFile();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
-            resetDB();
+            resetDB();  //Use function resetDB to write factory settings into file
         }
 
-        readDB(array);
+        readDB(array);  //read database-file into array
 
+        //Bind objects to layout
         buttonSave=(Button) findViewById(R.id.buttonSave);
         buttonSearch=(Button) findViewById(R.id.buttonSearch);
         buttonViewDB=(Button) findViewById(R.id.buttonViewDB);
@@ -127,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         buttonViewDB.setOnClickListener(buttonViewDBListener);
 
     }
-
+    //OnClickListeners
     View.OnClickListener buttonResetDBListener = new View.OnClickListener(){
         @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         @Override
