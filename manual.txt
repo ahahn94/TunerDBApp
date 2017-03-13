@@ -1,0 +1,85 @@
+Manual for TunerDB
+
+--------------------------------------------------------------------------
+German
+--------------------------------------------------------------------------
+Diese App wurde mit Android Studio erstellt.
+
+Diese App wurde für 5-Zoll-Smartphones erstellt.
+Die App benötigt mindestens Android 5.1.
+Darstellungsfehler (Buttons enden nicht am Bildschirmrand) sind ein häufiges
+Problem auf Geräten mit einer anderen Auflösung oder Displaygröße als beim
+Testgerät. Diese Fehler werde ich auf Grund der Vielzahl verschiedener
+Geräte nicht beheben.
+Die Nutzbarkeit sollte jedoch nicht beeinträchtigt sein.
+
+Diese App darf unter den Bedingungen der GNU GPL v.2 verändert oder kopiert
+werden.
+Wenn Sie etwas an der App reparieren oder verbessern, veröffentlichen Sie
+bitte Ihre Änderungen.
+
+Wenn Sie eine an Ihr Gerät angepasste Version der App erstellen wollen,
+schauen Sie sich doch mal die Margins und Paddings der Main Activity an.
+Diese sind in erster Linie für Darstellungsprobleme verantwortlich.
+--------------------------------------------------------------------------
+
+Erste Leiste (R - G - B - W - Y - M):
+Auswahl der Preset-Bank nach Farbe
+
+Leiste E - A - D - G - B - e:
+Auswahl des Speicherplatzes
+
+Search:
+Sucht einen Eintrag entsprechend der Auswahl in den beiden
+Leisten.
+
+Save Changes:
+Schreibt den Text aus der kleinen Textleiste über den Knöpfen
+an die Speicherstelle aus der Auswahl oben
+
+View All:
+Zeigt die gesamte Datenbank im unteren Textfeld an.
+Die Liste ist scrollbar.
+
+Reset Database:
+Schreibt die Werkseinstellungen in die Datenbank.
+ALLE EIGENEN EINTRÄGE WERDEN ÜBERSCHRIEBEN!
+
+--------------------------------------------------------------------------
+English
+--------------------------------------------------------------------------
+This app was created using Android Studio.
+
+This app was designed for 5"-Smartphones.
+It requires a minimum of Android 5.1.
+Problems with the layout are common and will not be fixed by me.
+Despite this, the usability should not be influenced.
+
+You are allowed to clone and modify the code of this app under the GPL v2.
+If you want to fix or enhance it, please consider publishing your changes.
+
+If you want to make a custom version of this app for your device, have a
+look at the margins and paddings in the main activity. This should fix
+most of the layout problems.
+--------------------------------------------------------------------------
+
+1st Row (R - G - B - W - Y - M):
+Select the Preset-bank by color
+
+2nd Row (E- A - D - G - B - e):
+Select the slot of the preset
+
+Search:
+Search the preset specified by the selection in the first 2 rows.
+
+Save Changes:
+Save the text from the textbox above the buttons to the bank and slot
+selected via rows 1 and 2
+
+View All:
+List all entries in the lower half of the screen.
+The list is scrollable.
+
+Reset Database:
+Restores the factory settings into the database.
+THIS DESTROYS ALL OF YOUR CUSTOM ENTRIES!
